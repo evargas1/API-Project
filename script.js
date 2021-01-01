@@ -1,4 +1,4 @@
-var city = "Chicago";
+var city = "Netherlands";
 
 
 $.getJSON(
@@ -9,10 +9,10 @@ function(data) {
 
         var icon = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
         var temp = Math.floor(data.main.temp);
-        var weather = data.weather[0].main;
+        var weather = data.weather[0].description;
 
         $(".icon").attr("src", icon);
-        $(".weather").append(temp)
+        $(".weather").append(weather);
         $(".temp").append(temp);
         
 
