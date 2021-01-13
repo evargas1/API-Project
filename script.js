@@ -14,7 +14,26 @@ function(data) {
         $(".icon").attr("src", icon);
         $(".weather").append(weather);
         $(".temp").append(temp);
+        // if you wanted to add this before you would use the function .prepend
         
 
     }
 );
+
+
+// exmaple from my book that I need to understand.
+
+$function() {
+    function loadContent(url){
+        $('#content').load(url + '#container').hide().fadeIn('slow');
+
+    }
+
+    $('nav a').on('click', function(e) {
+        e. preventDefault();
+        var href = this.href;
+        var $this = $(this);
+        $('a').removeClass('current');
+        $this 
+    })
+}
