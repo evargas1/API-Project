@@ -1,4 +1,4 @@
-city = "New York";
+city = "London";
 
 
 $.getJSON(
